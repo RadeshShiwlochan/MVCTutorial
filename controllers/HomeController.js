@@ -1,7 +1,9 @@
 exports.index = function(req, res) {
-	res.render('home/index');
+	res.title = 'Hello World';
+	res.render('home/index', res);
 };
 
 exports.other = function(req, res) {
-	res.render('home/other');
+	res.title = 'Other';
+	res.render('home/other', res);
 };
