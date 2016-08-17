@@ -5,6 +5,7 @@ exports.index = function(req, res) {
 };
 
 exports.other = function(req, res) {
-	res.title = 'Other';
-	res.render('home/other', res);
+	res.pageInfo = {};
+	res.pageInfo.title = "new User";
+	res.render('home/other', res.pageInfo);
 };
