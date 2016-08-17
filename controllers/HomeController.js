@@ -9,3 +9,9 @@ exports.other = function(req, res) {
 	res.pageInfo.title = "new User";
 	res.render('home/other', res.pageInfo);
 };
+
+exports.about = function(req, res) {
+	res.user = {};
+	res.user.name = "Christina";
+	res.render('home/about');
+};
