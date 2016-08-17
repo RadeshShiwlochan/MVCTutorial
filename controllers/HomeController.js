@@ -13,5 +13,5 @@ exports.other = function(req, res) {
 exports.about = function(req, res) {
 	res.user = {};
 	res.user.name = "Christina";
-	res.render('home/about');
+	res.render('home/about', res.user);
 };
