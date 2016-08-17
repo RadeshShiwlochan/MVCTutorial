@@ -1,6 +1,7 @@
 exports.index = function(req, res) {
-	res.title = 'Hello World';
-	res.render('home/index', res);
+	res.pageInfo = {};
+	res.pageInfo.title = "Mr Shiwlochan";
+	res.render('home/index', res.pageInfo);
 };
 
 exports.other = function(req, res) {
